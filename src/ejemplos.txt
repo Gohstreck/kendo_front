@@ -1,0 +1,13 @@
+renderElement(){
+   if(this.state.value == 'news')
+      return <Text>data</Text>;
+   return null;
+}
+
+render() {
+    return (   
+        <View style={styles.container}>
+            { this.renderElement() }
+        </View>
+    )
+}

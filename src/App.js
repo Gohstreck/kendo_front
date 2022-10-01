@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
-import React, { Component, useState } from 'react';
+import React from 'react';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
-import axios from 'axios';
-import { Button, Container, Card, Row } from 'react-bootstrap'
-import modules from './modules';
-
+import Home from './modules/home/Home';
+import Header from './modules/header/Header';
 function App() {
-  const [currentTab, setCurrentTab] = useState('dashboard')
 
   return (
-    <Router>
+    <div className='App'>
+      <Header user="user1"/>
+
+      <Home/>
+
+    </div>
+  );
+}
+
+export default App;
 
 
+/*
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <u1 className = "App-nav">
           {
             modules.map(module => (
@@ -29,15 +33,21 @@ function App() {
           }
         </u1>
       </header>
+
       <div className="App-content">
             {modules.map(module => (
               <Route {...module.routeProps} key={module.name} />
             ))}
           </div>
     </div>
+    <Router>
+      <Routes>
+        <Route exact path= "/home" component = {<Home/>} />
+
+      </Routes>
+
 
     </Router>
-  );
-}
 
-export default App;
+
+*/
