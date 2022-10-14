@@ -1,6 +1,8 @@
 import React from 'react';
 
 import {slide as Menu} from 'react-burger-menu'
+import {Link} from 'react-router-dom';
+
 import './styles.css'
 
 
@@ -41,8 +43,8 @@ function LatColumnHome(props) {
             <Menu {...props} >
                 <button className='clearBtn' onClick={register}> Registrarse </button> 
                 <button className='clearBtn' onClick={props.iniciarSesion}> Iniciar sesion </button> 
-                <button className='clearBtn' onClick={props.onDojoClick}> Buscar Dojos </button> 
-
+                <Link className='clearBtn' to="/lookDojo"> Buscar Dojos </Link> 
+                
                 <button className='clearBtn' onClick={onMaterialClick}> Materiales  </button> 
                 <button className='clearBtn' onClick={onVentaClick}> Paginas de venta  </button> 
 

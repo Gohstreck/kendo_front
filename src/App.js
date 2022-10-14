@@ -3,14 +3,16 @@ import './App.css';
 import React from 'react';
 
 import Home from './modules/home/Home';
-import Header from './modules/header/Header';
+import LookDojo from './modules/lookDojo/LookDojo';
+import {Route, Routes} from 'react-router-dom'
 function App() {
 
   return (
     <div className='App'>
-      <Header user="user1"/>
-
-      <Home/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/lookDojo" element={<LookDojo/>}/>
+        </Routes>
 
     </div>
   );

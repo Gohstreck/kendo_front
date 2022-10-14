@@ -1,0 +1,9 @@
+.footer {
+    background-color: black;
+    justify-content: center;
+    display: inline;
+    font-size: 500%;
+    color: cornflowerblue;
+    align-items: center;
+    overflow: auto;
+}

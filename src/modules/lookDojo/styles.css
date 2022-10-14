@@ -1,0 +1,58 @@
+.down {
+    background-color: aliceblue;
+}
+
+.searchBar {
+    background-color: aliceblue;
+    color: gray;
+    opacity: 0.8;
+    border: none;
+    font-size: 200%;
+    width: auto;
+    height: auto;
+    
+}
+
+.aviso{
+    color: gray;
+    justify-content: center;
+}
+.searchBar:hover{
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
+.searchBar:focus{
+    outline: none;
+    border: 1px solid green;
+
+}
+
+.selectBox{
+    background-color: aliceblue;
+    padding: 0.5em 0.5em 0.5em 0.5em ;
+    border-radius:  0.5em;
+    border: none;
+    text-transform: capitalize;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    font-size: 125%;
+
+}
+select::-ms-expand{
+    display: none;
+}
+.selectBox:hover{
+    background-color: cornflowerblue;
+    transition: background-color 0.3s;
+}
+
+.selectBox:active{
+    background-color: cornflowerblue;
+
+}
+
+.selectItem {
+    background-color: aliceblue;
+    color: green;
+}

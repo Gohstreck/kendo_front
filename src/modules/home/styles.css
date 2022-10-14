@@ -1,8 +1,7 @@
 .principal {
 
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    align-items: center;
+    background-image: url('back50.png');
+
+    height: auto;
 
 }

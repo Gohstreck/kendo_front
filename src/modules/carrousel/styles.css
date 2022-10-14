@@ -1,0 +1,20 @@
+.carrousel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+    left : 25%;
+    top: 25%;
+
+}
+
+.carrouselItem{
+    height: 40%;
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1.5s ease;
+}

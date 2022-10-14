@@ -1,5 +1,8 @@
 import React from 'react';
+import Carrousel from '../carrousel/Carrousel';
 import LatColumnHome from '../latColumnHome/LatColumnHome';
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
 import './styles.css'
 
 const userImg = require('../header/dkt.png');
@@ -23,19 +26,19 @@ const Home = props => {
 
 
     return(
-        <div id='principal' >
-            
-            <LatColumnHome onDojoClick = {onDojoClick} iniciarSesion={iniciarSesion} 
-            modifyUser = {modifyUser} outerContainerId={'principal'} pageWrapId={'carrousel'}/>
+        <>
+            <Header user="user1"/>
+            <div id='principal' className='principal' >
+                
+                <LatColumnHome onDojoClick = {onDojoClick} iniciarSesion={iniciarSesion} 
+                modifyUser = {modifyUser} outerContainerId={'principal'} pageWrapId={'carrousel'}/>
 
-
-
-            <div id ='carrousel'>
-
-            </div>
-
+                <Carrousel />
 
             </div>
+            <Footer />
+        </>
+
 
     );
 }
